@@ -1,41 +1,22 @@
-# building-fake-data
-Learning how to use pyspark and Faker packages
+## Repositórios de Estudos
 
-#### Install required packages
-```!pip install pyspark Faker ```
+### Introdução
+Aprofundar e aplicar aprendizados sobre ferramentas e conhecimentos em engenharia de dados.
 
-#### Creating the data
-```python
-# importing necessary libraries
-from pyspark.sql import SparkSession
-from faker import Faker
-import random
+### Habilidades em desenvolvimento
+- Python
+- SQL
+- Spark
+- Databricks
 
-# create Spark session
-spark = SparkSession.builder.appName("bank_balances").getOrCreate()
-fake = Faker()
+Abaixo vou deixar os links para baixar arquivos que criei aprendendo como usar a biblioteca pyspark e Faker para criar bases de dados sintéticos.
 
-# function to generate fake data
-def generate_data(num_records):
-    data = []
-    for _ in range(num_records):
-        name = fake.name()
-        balance = round(random.uniform(1000, 100000), 2)
-        account_number = fake.unique.bban()
-        data.append((name, account_number, balance))  # ✅ Ordem correta
-    return data
+[Baixei aqui - dCustomers](https://drive.google.com/file/d/138hz2RTswwxQRNjr-lXwVqbPZFXnteWF/view?usp=sharing)
 
-# generate data and create DataFrame
-dados = generate_data(1000)  # ✅ Nome correto
-columns = ["name", "account_number", "balance"]
-df = spark.createDataFrame(dados, schema=columns)
-df.show(10)
+[Baixei aqui - fOrders_items](https://drive.google.com/file/d/11PiwuH7PcJ0IBWvxzaaKlP7qyvCr86Lb/view?usp=sharing)
 
-# sort data by balance in descending order and show top 10
-df_sort = df.orderBy(df.balance.desc()).limit(10)
-df_sort.show()
+[Baixei aqui - Products](https://drive.google.com/file/d/1X4RxkI1hH-6k0gRS43CM8nY-AGp0QSe4/view?usp=sharing)
 
-# search for accounts with balance over a certain value
-value = 5000
-df_over_value = df.filter(df.balance > value)
-df_over_value.count()
+[Baixei aqui - fOrders](https://drive.google.com/file/d/15iVrEfKCY10jnONw_Uv4qgPD1O5wQ5EP/view?usp=sharing)
+
+## As informações são todas ficticias.
