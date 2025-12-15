@@ -21,6 +21,6 @@ Abaixo vou deixar os links para baixar arquivos que criei aprendendo como usar a
 
 Segue modelo lógico abaixo. [Baixe aqui!](https://app.brmodeloweb.com/#!/publicview/69401fb11ea872536752c496)
 
-![Modelo-logico](fake-dataset\files-ecommerce\modelo-logico-ecommerce.png)
+![Modelo-logico](https://github.com/icaroalmeidas/Studying-Data-Engineering/blob/main/fake-dataset/files-ecommerce/modelo-logico-ecommerce.png)
 
 ## As informações são todas ficticias.
