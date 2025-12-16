@@ -9,6 +9,25 @@ Aprofundar e aplicar aprendizados sobre ferramentas e conhecimentos em engenhari
 - Spark
 - Databricks
 
+### dimension-dataset-datalake
+Neste ponto, manipulei um arquivo em parquet com mais de um milhão de linhas.
+Separando o mesmo em varios dataframes simulando um datalake.
+- df_people
+- df_cities
+- df_countries
+- df_addresses
+- df_jobs
+- df_age
+- df_contacts
+- df_temporal
+- df_registers
+
+Salvando todos os dataframes como parquet.
+
+### fake-dataset
+
+Criando um dataset fake usando Pyspark e a bliblioteca Faker.
+
 Abaixo vou deixar os links para baixar arquivos que criei aprendendo como usar a biblioteca pyspark e Faker para criar bases de dados sintéticos.
 
 [Baixei aqui - dCustomers](https://drive.google.com/file/d/138hz2RTswwxQRNjr-lXwVqbPZFXnteWF/view?usp=sharing)
